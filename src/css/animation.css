@@ -1,0 +1,238 @@
+.from-top{
+	-webkit-transform-origin: 0% 0%;
+	-moz-transform-origin: 0% 0%;
+	-ms-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
+}
+.from-left{
+	-webkit-transform-origin: 0% 100%;
+	-moz-transform-origin: 0% 100%;
+	-ms-transform-origin: 0% 100%;
+	transform-origin: 0% 100%;
+}
+.from-top, .from-left{
+	-webkit-animation: enter-clockwise 0.23s ease-out;
+	-moz-animation: enter-clockwise 0.23s ease-out;
+	-ms-animation: enter-clockwise 0.23s ease-out;
+	animation: enter-clockwise 0.23s ease-out;
+}
+.from-right{
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	-ms-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+}
+.from-bottom{
+	-webkit-transform-origin: 0% 100%;
+	-moz-transform-origin: 0% 100%;
+	-ms-transform-origin: 0% 100%;
+	transform-origin: 0% 100%;
+}
+.from-right, .from-bottom{
+	-webkit-animation: enter-anti-clockwise 0.23s ease-out;
+	-moz-animation: enter-anti-clockwise 0.23s ease-out;
+	-ms-animation: enter-anti-clockwise 0.23s ease-out;
+	animation: enter-anti-clockwise 0.23s ease-out;
+}
+
+
+.to-top{
+	-webkit-transform-origin: 0% 0%;
+	-moz-transform-origin: 0% 0%;
+	-ms-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
+}
+.to-left{
+	-webkit-transform-origin: 0% 100%;
+	-moz-transform-origin: 0% 100%;
+	-ms-transform-origin: 0% 100%;
+	transform-origin: 0% 100%;
+}
+.to-top, .to-left{
+	-webkit-animation: leave-anti-clockwise 0.23s ease-out;
+	-moz-animation: leave-anti-clockwise 0.23s ease-out;
+	-ms-animation: leave-anti-clockwise 0.23s ease-out;
+	animation: leave-anti-clockwise 0.23s ease-out;
+}
+.to-right{
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	-ms-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+}
+.to-bottom{
+	-webkit-transform-origin: 0% 100%;
+	-moz-transform-origin: 0% 100%;
+	-ms-transform-origin: 0% 100%;
+	transform-origin: 0% 100%;
+}
+.to-right, .to-bottom{
+	-webkit-animation: leave-clockwise 0.23s ease-out;
+	-moz-animation: leave-clockwise 0.23s ease-out;
+	-ms-animation: leave-clockwise 0.23s ease-out;
+	animation: leave-clockwise 0.23s ease-out;
+}
+
+@-webkit-keyframes enter-clockwise{
+	from{
+		z-index: 3;
+		-webkit-transform: rotate(-90deg);
+	}
+	to{
+		z-index: 3;
+		-webkit-transform: rotate(0deg);
+	}
+}
+@-moz-keyframes enter-clockwise{
+	from{
+		z-index: 3;
+		-moz-transform: rotate(-90deg);
+	}
+	to{
+		z-index: 3;
+		-moz-transform: rotate(0deg);
+	}
+}
+@-ms-keyframes enter-clockwise{
+	from{
+		z-index: 3;
+		-ms-transform: rotate(-90deg);
+	}
+	to{
+		z-index: 3;
+		-ms-transform: rotate(0deg);
+	}
+}
+@keyframes enter-clockwise{
+	from{
+		z-index: 3;
+		transform: rotate(-90deg);
+	}
+	to{
+		z-index: 3;
+		transform: rotate(0deg);
+	}
+}
+
+@-webkit-keyframes enter-anti-clockwise{
+	from{
+		z-index: 3;
+		-webkit-transform: rotate(90deg);
+	}
+	to{
+		z-index: 3;
+		-webkit-transform: rotate(0deg);
+	}
+}
+@-moz-keyframes enter-anti-clockwise{
+	from{
+		z-index: 3;
+		-moz-transform: rotate(90deg);
+	}
+	to{
+		z-index: 3;
+		-moz-transform: rotate(0deg);
+	}
+}
+@-ms-keyframes enter-anti-clockwise{
+	from{
+		z-index: 3;
+		-ms-transform: rotate(90deg);
+	}
+	to{
+		z-index: 3;
+		-ms-transform: rotate(0deg);
+	}
+}
+@keyframes enter-anti-clockwise{
+	from{
+		z-index: 3;
+		transform: rotate(90deg);
+	}
+	to{
+		z-index: 3;
+		transform: rotate(0deg);
+	}
+}
+
+@-webkit-keyframes leave-clockwise{
+	from{
+		z-index: 3;
+		-webkit-transform: rotate(0deg);
+	}
+	to{
+		z-index: 3;
+		-webkit-transform: rotate(90deg);
+	}
+}
+@-moz-keyframes leave-clockwise{
+	from{
+		z-index: 3;
+		-moz-transform: rotate(0deg);
+	}
+	to{
+		z-index: 3;
+		-moz-transform: rotate(90deg);
+	}
+}
+@-ms-keyframes leave-clockwise{
+	from{
+		z-index: 3;
+		-ms-transform: rotate(0deg);
+	}
+	to{
+		z-index: 3;
+		-ms-transform: rotate(90deg);
+	}
+}
+@keyframes leave-clockwise{
+	from{
+		z-index: 3;
+		transform: rotate(0deg);
+	}
+	to{
+		z-index: 3;
+		transform: rotate(90deg);
+	}
+}
+
+@-webkit-keyframes leave-anti-clockwise{
+	from{
+		z-index: 3;
+		-webkit-transform: rotate(0deg);
+	}
+	to{
+		z-index: 3;
+		-webkit-transform: rotate(-90deg);
+	}
+}
+@-moz-keyframes leave-anti-clockwise{
+	from{
+		z-index: 3;
+		-moz-transform: rotate(0deg);
+	}
+	to{
+		z-index: 3;
+		-moz-transform: rotate(-90deg);
+	}
+}
+@-ms-keyframes leave-anti-clockwise{
+	from{
+		z-index: 3;
+		-ms-transform: rotate(0deg);
+	}
+	to{
+		z-index: 3;
+		-ms-transform: rotate(-90deg);
+	}
+}
+@keyframes leave-anti-clockwise{
+	from{
+		z-index: 3;
+		transform: rotate(0deg);
+	}
+	to{
+		z-index: 3;
+		transform: rotate(-90deg);
+	}
+}
